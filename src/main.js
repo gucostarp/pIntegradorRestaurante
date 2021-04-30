@@ -22,7 +22,7 @@ const privateRoute = (to, from, next) => {
   let userStore = store.state.user;
   let isAuthenticated = userStore.user !== null;
   console.log("isAuthenticated:" + isAuthenticated);
-  
+
   if (!isAuthenticated) {
     next({ name: "login" });
   } else {
@@ -49,7 +49,7 @@ const routes = [
   {
     path: "/cardapio",
     name: "cardapio",
-    component: () => import(/* webpackChunkName: "login" */ "@/views/Cardapio.vue")
+    component: () => import(/* webpackChunkName: "cardapio" */ "@/views/Cardapio.vue")
     //beforeEnter: privateRoute
   },
   {

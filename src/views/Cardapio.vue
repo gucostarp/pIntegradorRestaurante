@@ -12,10 +12,7 @@
         <ion-title>Cardápio</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content padding>
-      
-      
-    </ion-content>
+    <ion-content padding> </ion-content>
   </ion-page>
 </template>
 
@@ -24,14 +21,13 @@ export default {
   name: "cardapio",
   data() {
     return {
-      user: { custom: "" }
+      user: { custom: "" },
     };
-  }
-}
+  },
+};
 </script>
 <style scoped>
 ion-input#theOne :invalid {
-  background-color:  red !important;
-  }
-
+  background-color: red !important;
+}
 </style>

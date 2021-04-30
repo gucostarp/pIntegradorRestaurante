@@ -24,12 +24,12 @@ import HelloWorld from "@/components/HelloWorld.vue";
 export default {
   name: "home",
   components: {
-    HelloWorld
+    HelloWorld,
   },
   created() {
     console.log("onCreated");
     // const menuCtrl = document.querySelector("ion-menu-controller");
     // menuCtrl?.enable(true);
-  }
+  },
 };
 </script>

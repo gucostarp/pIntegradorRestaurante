@@ -1,6 +1,6 @@
 /* eslint-disable no-debugger */
 /* eslint-disable no-unused-vars */
-import { reject } from "q";
+// import { reject } from "q";
 
 export default {
   namespaced: true,
@@ -22,7 +22,7 @@ export default {
       });
     },
     login({ commit }, payload) {
-      if (payload.email == "Gustavo" && payload.password == "123") {
+      if (payload.email == "Gustavo" || "gustavo" || "GUSTAVO" && payload.password == "123") {
         commit("hasUser", { ...payload });
         return true;
       } else {
@@ -56,5 +56,5 @@ export default {
   //
   // GETTERS
   //
-  getters: { }
+  getters: {}
 };

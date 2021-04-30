@@ -1,4 +1,4 @@
-/* eslint-disable no-debugger */
+
 <template>
   <ion-menu content-id="main" side="start" id="main-menu" v-if="currentUser">
     <ion-header>
@@ -16,7 +16,7 @@
           <ion-item button @click="$router.push('/')">
             <ion-icon name="home"></ion-icon>
             <ion-label>
-              <span :class="[{boldLabel : isActive('/') }, 'menu-label']">Home</span>
+              <span :class="[{boldLabel : isActive('/home') }, 'menu-label']">Home</span>
             </ion-label>
           </ion-item>
         </ion-menu-toggle>

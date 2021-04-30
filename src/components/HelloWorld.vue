@@ -1,25 +1,72 @@
 <template>
-  <div>
-   <ion-card>
-    <ion-card-header>
-      <ion-card-subtitle>Confira!</ion-card-subtitle>
-      <ion-card-title>Prato do Dia</ion-card-title>
-    </ion-card-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-2>
+        <ion-card>
+          <ion-item>
+            <ion-icon :icon="pin" slot="start"></ion-icon>
+            <ion-label>ion-item in a card, icon left, button right</ion-label>
+            <ion-button fill="outline" slot="end">View</ion-button>
+          </ion-item>
 
-    <ion-card-content>
-      Arroz, Feijão, Purê de Batata, Contra-filé e Salada. 
-    </ion-card-content>
-  </ion-card>
- 
-  </div>
+          <ion-card-content>
+            This is content, without any paragraph or header tags, within an
+            ion-card-content element.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col col-1>
+        <ion-card>
+          <ion-item>
+            <ion-icon :icon="pin" slot="start"></ion-icon>
+            <ion-label>ion-item in a card, icon left, button right</ion-label>
+            <ion-button fill="outline" slot="end">View</ion-button>
+          </ion-item>
+
+          <ion-card-content>
+            This is content, without any paragraph or header tags, within an
+            ion-card-content element.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size-1>
+        <ion-card>
+          <ion-item>
+            <ion-icon :icon="pin" slot="start"></ion-icon>
+            <ion-label>ion-item in a card, icon left, button right</ion-label>
+            <ion-button fill="outline" slot="end">View</ion-button>
+          </ion-item>
+
+          <ion-card-content>
+            This is content, without any paragraph or header tags, within an
+            ion-card-content element.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col col-1>
+        <ion-card>
+          <ion-item>
+            <ion-icon :icon="pin" slot="start"></ion-icon>
+            <ion-label>ion-item in a card, icon left, button right</ion-label>
+            <ion-button fill="outline" slot="end">View</ion-button>
+          </ion-item>
+
+          <ion-card-content>
+            This is content, without any paragraph or header tags, within an
+            ion-card-content element.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </template>
 
 <script>
 export default {
   name: "HelloWorld",
   props: {
-    msg: String
-  }
+    msg: String,
+  },
 };
 </script>
 

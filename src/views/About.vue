@@ -23,14 +23,13 @@ export default {
   name: "about",
   data() {
     return {
-      user: { custom: "" }
+      user: { custom: "" },
     };
-  }
-}
+  },
+};
 </script>
 <style scoped>
 ion-input#theOne :invalid {
-  background-color:  red !important;
-  }
-
+  background-color: red !important;
+}
 </style>

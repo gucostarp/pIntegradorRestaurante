@@ -28,29 +28,29 @@
 
 <script>
 export default {
-  name: "Login",
+  name: "login",
   methods: {
     async doLogin() {
       let result = await this.$store.dispatch("user/login", {
         email: this.email,
-        password: this.password
+        password: this.password,
       });
       if (result) {
         console.log(this.$store.state);
         this.$router.push("/");
       }
-    }
+    },
   },
   data() {
     return {
       email: "",
-      password: ""
+      password: "",
     };
   },
   mounted() {
-    console.log("mounted");
+    console.log("montado");
     // const menuCtrl = document.querySelector("ion-menu-controller");
     // menuCtrl.enable(false);
-  }
+  },
 };
 </script>
