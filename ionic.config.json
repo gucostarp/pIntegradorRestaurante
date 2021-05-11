@@ -1,8 +1,5 @@
 {
-    "name": "ionic-vue-web-components-split-screen",
-    "integrations": {
-      "capacitor": {}
-    },
-    "type": "vue"
-  }
-  
+  "name": "meuprojeto",
+  "integrations": {},
+  "type": "ionic-angular"
+}

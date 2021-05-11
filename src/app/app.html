@@ -1,0 +1,20 @@
+<ion-menu [content]="content">
+    <ion-header>
+        <ion-toolbar color="cfirebrick">
+            <ion-title>Menu</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+        <ion-list>
+            <ion-item *ngFor="let page of pages" class="xc">
+            <ion-img src={{page.img}} class="m-img" (click)="openPage(page)" menuClose></ion-img>
+            <a
+                (click)="openPage(page)" menuClose>
+                {{page.title}}
+             </a>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+<ion-nav id="nav" #content [root]="rootPage"></ion-nav>

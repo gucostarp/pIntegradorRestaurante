@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar color="cdarkred">
+    <button ion-button menuToggle>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title>Lanches</ion-title>
+  </ion-navbar>
+  <ion-toolbar color="cdarksalmon" style="min-height: 10px"></ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list *ngFor="let lanche of lanches">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src={{lanche.img}}>
+      </ion-avatar>
+      {{lanche.title}} - {{lanche.preco}} <br>
+      <button ion-button color='cdarkred' [navPush]="descricaoPage" [navParams]="lanche">Detalhes</button>
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>

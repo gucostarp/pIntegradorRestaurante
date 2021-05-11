@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar color="cdarkred">
+    <button ion-button menuToggle>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title>{{bebidas.title}}</ion-title>
+  </ion-navbar>
+  <ion-toolbar color="cdarksalmon" style="min-height: 10px"></ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-row>
+    <ion-col>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title>{{bebidas.title}}</ion-card-title>
+          <img src={{bebidas.img}} />
+        </ion-card-header>
+        <ion-card-content>
+          <p>{{bebidas.descricao}}</p>
+          <p>Preço: R${{bebidas.preco}}</p>
+
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+  </ion-row>
+
+</ion-content>

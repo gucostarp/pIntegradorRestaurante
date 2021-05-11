@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar color="cdarkred">
+    <button ion-button menuToggle>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title>Entradas</ion-title>
+  </ion-navbar>
+  <ion-toolbar color="cdarksalmon" style="min-height: 10px"></ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list *ngFor="let entrada of entradas">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src={{entrada.img}}>
+      </ion-avatar>
+      {{entrada.title}} - {{entrada.preco}} <br>
+      <button ion-button color='cdarkred' [navPush]="descricaoPage" [navParams]="entrada">Detalhes</button>
+    </ion-item>
+  </ion-list>
+
+ 
+
+
+</ion-content>

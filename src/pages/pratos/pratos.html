@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar color="cdarkred">
+    <button ion-button menuToggle>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title>Pratos</ion-title>
+  </ion-navbar>
+  <ion-toolbar color="cdarksalmon" style="min-height: 10px"></ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <ion-list *ngFor="let prato of pratos">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src={{prato.img}}>
+      </ion-avatar>
+      {{prato.title}} - {{prato.preco}} <br>
+      <button ion-button color='cdarkred' [navPush]="descricaoPage" [navParams]="prato">Detalhes</button>
+    </ion-item>
+  </ion-list>
+
+
+
+</ion-content>

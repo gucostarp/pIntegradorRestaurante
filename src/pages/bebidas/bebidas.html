@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-navbar color="cdarkred">
+    <button ion-button menuToggle>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title>Bebidas</ion-title>
+  </ion-navbar>
+  <ion-toolbar color="cdarksalmon" style="min-height: 10px"></ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <h3>Cervejas</h3>
+  <ion-list *ngFor="let cerveja of cervejas">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src={{cerveja.img}}>
+      </ion-avatar>
+      {{cerveja.title}} - {{cerveja.preco}} <br>
+      <button ion-button color='cdarkred' [navPush]="descricaoPage" [navParams]="cerveja">Detalhes</button>
+    </ion-item>
+  </ion-list>
+
+
+  <h3>Refrigerantes</h3>
+
+  <ion-list *ngFor="let refrigerante of refrigerantes">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src={{refrigerante.img}}>
+      </ion-avatar>
+      {{refrigerante.title}} - {{refrigerante.preco}} <br>
+      <button ion-button color='cdarkred' [navPush]="descricaoPage" [navParams]="refrigerante">Detalhes</button>
+    </ion-item>
+  </ion-list>
+
+  <h3>Diversos</h3>
+
+  <ion-list *ngFor="let diversa of diversas">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src={{diversa.img}}>
+      </ion-avatar>
+      {{diversa.title}} - {{diversa.preco}} <br>
+      <button ion-button color='cdarkred' [navPush]="descricaoPage" [navParams]="diversa">Detalhes</button>
+    </ion-item>
+  </ion-list>
+
+
+</ion-content>

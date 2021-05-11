@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar color="cdarkred">
+    <button ion-button menuToggle>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title>Sobremesas</ion-title>
+  </ion-navbar>
+  <ion-toolbar color="cdarksalmon" style="min-height: 10px"></ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+   
+  <ion-list *ngFor="let sobremesa of sobremesas">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src={{sobremesa.img}}>
+      </ion-avatar>
+      {{sobremesa.title}} - {{sobremesa.preco}} <br>
+      <button ion-button color='cdarkred' [navPush]="descricaoPage" [navParams]="sobremesa">Detalhes</button>
+    </ion-item>
+  </ion-list>
+
+
+
+</ion-content>

@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar color="cdarkred">
+    <button ion-button menuToggle>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title></ion-title>
+  </ion-navbar>
+  <ion-toolbar color="cdarksalmon" style="min-height: 10px"></ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <ion-row>
+    <ion-col>
+      <ion-img src="assets/imgs/logo.png"></ion-img>
+    </ion-col>
+  </ion-row>
+
+  <ion-card>
+    <ion-card-title>Seja bem-vindo!
+    </ion-card-title> 
+
+    <img src='assets/imgs/pratododia.png' [navPush]="pdodiaPage">
+    <ion-card-header>
+
+    </ion-card-header>
+    <ion-card-content>
+      <strong>O sabor caseiro direto na sua casa!
+        Seja bem vindo e não deixe de conferir o prato do dia.
+        Clique na imagem e aproveite!</strong>
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

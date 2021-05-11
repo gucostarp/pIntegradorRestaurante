@@ -1,8 +1,0 @@
-{
-  "appId": "com.fiwic.ivwebsplit",
-  "appName": "ionic-vue-web-components-split-screen",
-  "bundledWebRuntime": false,
-  "npmClient": "npm",
-  "webDir": "dist",
-  "cordova": {}
-}

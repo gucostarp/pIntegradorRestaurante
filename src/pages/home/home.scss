@@ -1,0 +1,35 @@
+ion-content{
+  align-items: center;
+}
+
+
+ion-card{
+    display: flex;
+    flex-direction: column;
+    margin: 0!important;
+    text-align: center;
+    background: blue;
+    width: 100% !important;
+    align-items: center;
+    padding: 10px;
+
+  }
+
+ion-row{
+  text-align: center;
+}
+
+ion-img{
+    contain: layout !important;
+}
+
+// ion-toolbar{
+//     min-height: 10px!important;
+//   }
+
+  ion-img.img-unloaded img {
+    display: flex !important;
+  }
+
+ 
+
